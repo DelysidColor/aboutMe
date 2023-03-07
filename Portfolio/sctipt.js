@@ -1,9 +1,9 @@
 let images = [
-  "/assets/img/hobbie.jpg",
-  "/assets/img/bridge.jpeg",
-  "/assets/img/grass.jpeg",
-  "/assets/img/lake.jpeg",
-  "/assets/img/sunset.jpeg",
+  "/aboutMe/assets/img/hobbie.jpg",
+  "/aboutMe/assets/img/bridge.jpeg",
+  "/aboutMe/assets/img/grass.jpeg",
+  "/aboutMe/assets/img/lake.jpeg",
+  "/aboutMe/assets/img/sunset.jpeg",
 ];
 
 let num = 0;
