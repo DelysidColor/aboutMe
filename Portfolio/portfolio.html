@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/Portfolio/styles.css" />
+    <title>VisitCard</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header_navigation">
+        <ul class="navigation-list">
+          <li>
+            <a href="/index.html">About me</a>
+          </li>
+          <li>
+            <a href="/Animation/animation.html">Animation</a>
+          </li>
+          <li class="active">
+            <a href="/Portfolio/portfolio.html">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="slider">
+        <div class="slider_main-img">
+          <img class="slider-img" src="/assets/img/hobbie.jpg" />
+          <button class="arrow_wrap arrow-rew" onclick="backImg()">
+            &#9668;&nbsp;
+          </button>
+          <button class="arrow_wrap arrow-fwd" onclick="forwImg()">
+            &nbsp;&#9658;
+          </button>
+        </div>
+        <div class="small-img">
+          <img src="/assets/img/grass.jpeg" />
+          <img src="/assets/img/lake.jpeg" />
+          <img src="/assets/img/sunset.jpeg" />
+          <img src="/assets/img/bridge.jpeg" />
+          <img src="/assets/img/hobbie.jpg" />
+        </div>
+      </div>
+      <div class="feedback-wrapper">
+        <div class="feedback">
+          <div class="form-and-button">
+            <div class="feedback_form-div">
+              <form class="feedback_form" action="./" method="post">
+                <label for="name"></label>
+                <input
+                  class="feedback_name"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                />
+
+                <label for="comment"></label>
+                <textarea
+                  class="feedback_comment"
+                  required
+                  placeholder="Your comment here..."
+                  name="comment"
+                  id="comment"
+                ></textarea>
+              </form>
+            </div>
+
+            <button class="feedback_button" type="button">
+              A <br />
+              d <br />
+              d
+            </button>
+          </div>
+        </div>
+        <div class="comments-container">
+          <h3>COMMENTS</h3>
+          <div class="single-comment">
+            <img src="/assets/img/jobs.jpg" alt="Avatar" />
+            <div class="single-comment_text">
+              <p class="single-comment_name">Steave Jobs</p>
+              <p class="single-comment_text">Good looking website!</p>
+            </div>
+          </div>
+          <div class="single-comment">
+            <img src="/assets/img/cook.jpg" alt="Avatar" />
+            <div class="single-comment_text">
+              <p class="single-comment_name">Tim Cook</p>
+              <p>Agree with my friend!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="https://t.me/delycolor"
+        ><img src="/assets/img/Vector.png" alt="telegram"
+      /></a>
+    </footer>
+    <script src="/Portfolio/sctipt.js"></script>
+  </body>
+</html>

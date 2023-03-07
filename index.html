@@ -2,41 +2,96 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>About me</title>
   </head>
   <body>
     <header class="header">
       <nav class="header_navigation">
         <ul class="navigation-list">
-          <li>
-            <a href="Home/Home.html">Main</a>
-          </li>
           <li class="active">
-            <a href="index.html">About me</a>
+            <a href="/index.html">About me</a>
           </li>
           <li>
-            <a href="Contacts/Contacts.html">Contacts</a>
+            <a href="/Animation/animation.html">Animation</a>
+          </li>
+          <li>
+            <a href="/Portfolio/portfolio.html">Portfolio</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="container">
-        <div class="slider">
-          <img class="slider-img" src="assets/img/author.jpg" />
-          <div class="buttons">
-            <button class="btn btn-back" onclick="backImg()">Назад</button>
-            <button class="btn btn-forw" onclick="forwImg()">Вперед</button>
+        <div class="intro">
+          <img class="intro-img" src="assets/img/author.jpg" />
+          <div class="about-text">
+            <div class="full-name">
+              <h2>Batushev Artem</h2>
+            </div>
+            <div class="descripton">
+              <p>
+                I ‘am 33 y.o. Living in Samara. <br />
+								<p class="description_bold-text">
+									At the beginning of the year 2022 I decided to become a front-end 
+									developer. Not only because of money and high salary but 
+									because I love to see how a website become alive. I love the 
+									idea of making a good code and see how hieroglyphs (for other people) 
+									becomes something visual and you can use it.
+								</p>
+                My working experience: <br />
+                2015 may – 2017 been working in a marketing agency Eureka-M.
+                Started as advertising manager. Yandex direct, Google ads.
+                Usually we have an average click price at the market. My goal
+                was to make it lower. One of our customers was fast growing
+                company of metal tile production. My colleague and me did the
+                lowest price on market for the lead. After a year I became a
+                Head of ADS department. The goals were to save the results we have
+                already achieved and make same results for new clients. I was
+                leading the team of 4 people. Designer, ads manager, SMM manager and
+                SEO manager.
+              </p>
+              <p>
+                In November 2017 I decided to quit and make my own company based
+                on my hobby – fingerboards. I’ve been making small skateboards
+                for fingers. A very small niche that takes a lot of time and
+                investments in it. So I decided to close it.
+              </p>
+              <p>
+                May 2020 – October 2022 Commercial Truck sales manager. Been
+                selling ISUZU (Japan) and IVECO (Italy, Spain) trucks. Both
+                brands decided to stop working with Russia. In July our company
+                sold all the cars we were reserved, and I decided to quit to give
+                myself more time to educate in programming.
+							</p>
+            </div>
+            <div class="portfolio-link">
+              <p>
+                To entertain yourself a bit check
+                <a
+                  href="/Animation/animation.html"
+                  style="text-transform: uppercase"
+                  >Animation</a
+                >
+                page <br />
+                See my works at
+                <a
+                  href="/Portfolio/portfolio.html"
+                  style="text-transform: uppercase"
+                  >Portfolio</a
+                >
+                page.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <p class="footer_note">
-        If you take a content - share a link to the author
-      </p>
+      <a href="https://t.me/delycolor"
+        ><img src="/assets/img/Vector.png" alt="telegram"
+      /></a>
     </footer>
     <script src="scripts.js"></script>
   </body>
