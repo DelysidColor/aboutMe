@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.content {
+	min-height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer {
+	background-color: gray;
+	padding: 5px;
+	padding-right: 25px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+.header {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: grey;
+	margin-bottom: 10px;
+}
+
+.navigation-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+.active {
+	text-transform: uppercase;
+}
+
+.navigation-list li {
+	margin: 10px;
+	display: flex;
+	max-width: 200px;
+	height: auto;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.navigation-list a {
+	display: flex;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 900;
+	padding: 5px;
+	color: rgb(201, 246, 253);
+}
+
+.navigation-list a:visited {
+	color: rgb(233, 189, 247);
+}
+ 
+.navigation-list a:hover {
+	color: rgb(249, 166, 98);
+	transition: color 0.6s 
+}
+
+.ball-container {
+	min-width: 450px;
+	height: 350px;
+	background-color: #2f2a2aa7;
+	border-radius: 25px;
+	margin: 10px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 10px 3px black;
+}
+
+.circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: rgb(212, 178, 245);
+
+	position: absolute;
+    --x:0px;
+    --y:0px;
+
+    transform: translate(var(--x),var(--y));
+}
+
+.circle:hover {
+	box-shadow: 0 0 10px 0 #f2a6fd inset, 0 0 10px 4px #fef595;
+	border: none;
+}
+
+.btn {
+	width: 100px;
+	height: 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px rgb(225,247,172) inset, 0 0 0 0 rgb(225,247,172);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: grey;
+	text-transform: uppercase;
+  transition: .15s ease-in-out;
+}
+
+.animation-description{
+	margin: 20px;
+	display: flex;
+	width: auto;
+	height: 30px;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.colorchanger {
+	text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 40px grey inset, 0 0 0 0 rgb(83, 84, 82);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+	text-transform: uppercase;
+  transition: .15s ease-in-out;
+	border: none;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+.colorchanger:hover {
+	box-shadow: 0 0 10px 0 #78f580 inset, 0 0 10px 4px #71ee79;
+  color: black;
+	border: none;
+	background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 238, 0) 35%, rgb(0, 149, 255) 100%);
+}
+
+.animation-description p {
+	color: rgb(59, 57, 57);
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
