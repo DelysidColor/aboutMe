@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="/aboutMe/Portfolio/styles.css" />
+    <link rel="stylesheet" href="/AboutMe/Portfolio/styles.css" />
     <title>VisitCard</title>
   </head>
   <body>
@@ -10,13 +10,13 @@
       <nav class="header_navigation">
         <ul class="navigation-list">
           <li>
-            <a href="/aboutMe/index.html">About me</a>
+            <a href="/AboutMe/index.html">About me</a>
           </li>
           <li>
-            <a href="/aboutMe/Animation/animation.html">Animation</a>
+            <a href="/AboutMe/Animation/animation.html">Animation</a>
           </li>
           <li class="active">
-            <a href="/aboutMe/Portfolio/portfolio.html">Portfolio</a>
+            <a href="/AboutMe/Portfolio/portfolio.html">Portfolio</a>
           </li>
         </ul>
       </nav>
@@ -24,7 +24,8 @@
     <div class="content">
       <div class="slider">
         <div class="slider_main-img">
-          <img class="slider-img" src="/aboutMe/assets/img/hobbie.jpg" />
+          <img class="slider-img" src="/AboutMe/assets/img/hobbie.jpg" />
+          <p class="pic-description">hobbie</p>
           <button class="arrow_wrap arrow-rew" onclick="backImg()">
             &#9668;&nbsp;
           </button>
@@ -33,11 +34,11 @@
           </button>
         </div>
         <div class="small-img">
-          <img src="/aboutMe/assets/img/grass.jpeg" />
-          <img src="/aboutMe/assets/img/lake.jpeg" />
-          <img src="/aboutMe/assets/img/sunset.jpeg" />
-          <img src="/aboutMe/assets/img/bridge.jpeg" />
-          <img src="/aboutMe/assets/img/hobbie.jpg" />
+          <img src="/AboutMe/assets/img/grass.jpeg" data-text="forest" />
+          <img src="/AboutMe/assets/img/lake.jpeg" data-text="lake" />
+          <img src="/AboutMe/assets/img/sunset.jpeg" data-text="sunset" />
+          <img src="/AboutMe/assets/img/bridge.jpeg" data-text="bridge" />
+          <img src="/AboutMe/assets/img/hobbie.jpg" data-text="hobbie" />
         </div>
       </div>
       <div class="feedback-wrapper">
@@ -75,17 +76,79 @@
         <div class="comments-container">
           <h3>COMMENTS</h3>
           <div class="single-comment">
-            <img src="/aboutMe/assets/img/jobs.jpg" alt="Avatar" />
-            <div class="single-comment_text">
-              <p class="single-comment_name">Steave Jobs</p>
-              <p class="single-comment_text">Good looking website!</p>
+            <img src="/AboutMe/assets/img/jobs.jpg" alt="Avatar" />
+            <div class="single-comment_texts">
+              <input
+                class="single-comment_name"
+                value="Steave Jobs"
+                placeholder="your name"
+                readonly
+              />
+              <textarea
+                class="single-comment_text"
+                placeholder="your text"
+                readonly
+              >
+Good looking website!</textarea
+              >
+            </div>
+            <div class="comment__buttons">
+              <button class="comment__button button-delete" type="button">
+                <img
+                  src="/AboutMe/assets/img/Comment-buttons/deleteButton.png"
+                  alt="deleteButton"
+                />
+              </button>
+              <button class="comment__button button-edit" type="button">
+                <img
+                  src="/AboutMe/assets/img/Comment-buttons/editButton.png"
+                  alt="editButton"
+                />
+              </button>
+              <button class="comment__button button-save" type="button" hidden>
+                <img
+                  src="/AboutMe/assets/img/Comment-buttons/saveButton.png"
+                  alt="saveButton"
+                />
+              </button>
             </div>
           </div>
           <div class="single-comment">
-            <img src="/aboutMe/assets/img/cook.jpg" alt="Avatar" />
-            <div class="single-comment_text">
-              <p class="single-comment_name">Tim Cook</p>
-              <p>Agree with my friend!</p>
+            <img src="/AboutMe/assets/img/cook.jpg" alt="Avatar" />
+            <div class="single-comment_texts">
+              <input
+                class="single-comment_name"
+                value="Tim Cook"
+                placeholder="your name"
+                readonly
+              />
+              <textarea
+                class="single-comment_text"
+                placeholder="your text"
+                readonly
+              >
+Agree with my friend!</textarea
+              >
+            </div>
+            <div class="comment__buttons">
+              <button class="comment__button button-delete" type="button">
+                <img
+                  src="/AboutMe/assets/img/Comment-buttons/deleteButton.png"
+                  alt="deleteButton"
+                />
+              </button>
+              <button class="comment__button button-edit" type="button">
+                <img
+                  src="/AboutMe/assets/img/Comment-buttons/editButton.png"
+                  alt="editButton"
+                />
+              </button>
+              <button class="comment__button button-save" type="button" hidden>
+                <img
+                  src="/AboutMe/assets/img/Comment-buttons/saveButton.png"
+                  alt="saveButton"
+                />
+              </button>
             </div>
           </div>
         </div>
@@ -93,9 +156,9 @@
     </div>
     <footer class="footer">
       <a href="https://t.me/delycolor"
-        ><img src="/aboutMe/assets/img/Vector.png" alt="telegram"
+        ><img src="/AboutMe/assets/img/Vector.png" alt="telegram"
       /></a>
     </footer>
-    <script src="/aboutMe/Portfolio/sctipt.js"></script>
+    <script src="/AboutMe/Portfolio/sctipt.js"></script>
   </body>
 </html>

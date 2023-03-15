@@ -210,19 +210,64 @@ textarea {
 	border-radius: 25px;
 }
 
-.single-comment_name {
+.single-comment_name[readonly] {
 	font-weight: bold;
+	outline: none;
 }
 
-.single-comment_text {
+.single-comment_name[readonly],
+.single-comment_text[readonly] {
+  border: 0;
+  outline: 0;
+  cursor: default;
+	margin-left: 10px;
+	width: 200px;
+}
+
+.single-comment_texts {
 display: flex;
 flex-direction: column;
 justify-content: space-around;
+resize: none;
+
 }
 
 .feedback-wrapper {
 	display: flex;
 	align-items: flex-start;
 	margin: 0 auto;
+}
+
+.pic-description {
+	position: absolute;
+	top: 90%;
+	left: 20%;
+	background: linear-gradient(90deg, transparent, black, transparent);
+	color: white;
+	width: 300px;
+	height: 30px;
+	text-align: center;
+}
+
+.comment__button {
+	width: 20px;
+	height: 20px;
+	border: none;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.comment__button:hover {
+	background-color: #dde3dd;
+}
+
+.comment__buttons {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.comment__button img {
+	height: 15px;
 }
 
