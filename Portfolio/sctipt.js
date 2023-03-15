@@ -1,9 +1,9 @@
 let images = [
-  "/AboutMe/assets/img/hobbie.jpg",
-  "/AboutMe/assets/img/bridge.jpeg",
-  "/AboutMe/assets/img/grass.jpeg",
-  "/AboutMe/assets/img/lake.jpeg",
-  "/AboutMe/assets/img/sunset.jpeg",
+  "/aboutMe/assets/img/hobbie.jpg",
+  "/aboutMe/assets/img/bridge.jpeg",
+  "/aboutMe/assets/img/grass.jpeg",
+  "/aboutMe/assets/img/lake.jpeg",
+  "/aboutMe/assets/img/sunset.jpeg",
 ];
 
 let num = 0;
@@ -106,7 +106,7 @@ function newComment() {
 
   //delete button
   let delButtonImage = document.createElement("img");
-  delButtonImage.src = "/AboutMe/assets/img/Comment-buttons/deleteButton.png";
+  delButtonImage.src = "/aboutMe/assets/img/Comment-buttons/deleteButton.png";
   delButtonImage.alt = "deleteButton";
   delButton.appendChild(delButtonImage);
 
@@ -118,7 +118,7 @@ function newComment() {
 
   //edit button
   let editButtonImage = document.createElement("img");
-  editButtonImage.src = "/AboutMe/assets/img/Comment-buttons/editButton.png";
+  editButtonImage.src = "/aboutMe/assets/img/Comment-buttons/editButton.png";
   editButtonImage.alt = "editButton";
   editButton.appendChild(editButtonImage);
 
@@ -131,7 +131,7 @@ function newComment() {
   buttons.appendChild(saveButton);
 
   let saveButtonImage = document.createElement("img");
-  saveButtonImage.src = "/AboutMe/assets/img/Comment-buttons/saveButton.png";
+  saveButtonImage.src = "/aboutMe/assets/img/Comment-buttons/saveButton.png";
   saveButtonImage.alt = "saveButton";
   saveButton.appendChild(saveButtonImage);
 
